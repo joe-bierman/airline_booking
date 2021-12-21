@@ -1,0 +1,8 @@
+User miles
+User2 miles
+joebier 1050
+vbierman 200
+tempuser 1050
+fakeu 500
+java 500
+drjava 550

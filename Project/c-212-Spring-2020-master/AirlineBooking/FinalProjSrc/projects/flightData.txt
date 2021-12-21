@@ -1,0 +1,11 @@
+1013 AmericanAirlines 12:00-10-30-2020 14:00-10-30-2020 Nashville Chicago 100 100 short 100 90
+1015 Continental 12:00-10-30-2020 14:00-10-30-2020 Nashville Chicago 100 100 short 100 90
+1017 ExpressAir 12:00-10-30-2020 14:00-10-30-2020 Nashville Chicago 100 100 short 100 90
+1019 ConAir 12:00-10-30-2020 14:00-10-30-2020 Nashville Chicago 100 100 short 100 90
+1010 Southwest 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 100 long 500 90
+1018 ConAir 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 100 long 500 90
+1011 Southwest 12:00-10-30-2020 14:00-10-30-2020 Nashville Chicago 100 98 short 100 90
+1009 Delta 12:00-10-30-2020 14:00-10-30-2020 Nashville Chicago 100 98 long 500 500
+1012 AmericanAirlines 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 92 long 500 450
+1008 Delta 18:30-4-4-2020 21:30-4-4-2020 STL Nashville 100 145 short 300 162
+1016 ExpressAir 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 100 long 500 90

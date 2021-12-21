@@ -1,0 +1,8 @@
+User, flight,
+joebier,1014 Continental 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 94 long 500 90,1012 AmericanAirlines 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 91 long 500 90 ,
+joebier2,1020 Delta 12:00-4/30/2020 14:00-4/30/2020 Nashville STL 100 97 short 100 250 ,
+vbierman,1020 Delta 12:00-4/30/2020 14:00-4/30/2020 Nashville STL 100 97 short 100 250 ,1020 Delta 12:00-4/30/2020 14:00-4/30/2020 Nashville STL 100 96 short 100 250 ,1020 Delta 12:00-4/30/2020 14:00-4/30/2020 Nashville STL 100 95 short 100 250 ,
+tempuser,1020 Delta 12:00-4/30/2020 14:00-4/30/2020 Nashville STL 100 98 short 100 250 ,1021 Delta 06:00-12-31-2020 12:00-12-31-2020 SanDiego JFK 400 399 long 1000 500 ,
+fakeu,1016 ExpressAir 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 99 long 500 90 ,
+java,1016 ExpressAir 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 99 long 500 90 ,
+drjava,1016 ExpressAir 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 99 long 500 90 ,1016 ExpressAir 12:00-10-30-2020 14:00-10-30-2020 Denver NYC 100 99 long 500 90 ,
