@@ -1,5 +1,5 @@
 /*
- * Group 54 Final Project
+ *
 
  * Driver Class that houses the menu functionality system of the program
  */
@@ -107,7 +107,7 @@ public class MenuDriver {
 		airUsernames= new ArrayList<String>();
 		airPasswords= new HashMap<String, String>();
 		
-		Scanner reader= new Scanner(new File("projects/up1.txt"));
+		Scanner reader= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/up1.txt"));
 		int i =0;
 		while(i<2) {
 			if(i==0) {
@@ -125,7 +125,7 @@ public class MenuDriver {
 			}
 			i++;
 		}
-		Scanner reader2= new Scanner(new File("projects/up2.txt"));
+		Scanner reader2= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/up2.txt"));
 		int k =0;
 		while(k<2) {
 			if(k==0) {
@@ -235,8 +235,8 @@ public class MenuDriver {
 		
 	//Last thing to do is to update the data files by writing the sets and maps to them
 	// Do that here:
-		PrintWriter pw= new PrintWriter("projects/up1.txt");
-		PrintWriter pw2= new PrintWriter("projects/up2.txt");
+		PrintWriter pw= new PrintWriter("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/up1.txt");
+		PrintWriter pw2= new PrintWriter("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/up2.txt");
 		
 		for(int j=0;j<usernames.size();j++) {
 			if(j==usernames.size()-1) {

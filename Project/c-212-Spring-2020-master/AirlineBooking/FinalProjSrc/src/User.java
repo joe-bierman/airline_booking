@@ -19,9 +19,9 @@ public class User {
 	private ArrayList<String> otherFlights= new ArrayList<>();
 	private ArrayList<String> myMiles= new ArrayList<>();
 	private ArrayList<String> otherMiles= new ArrayList<>();
-	private File flightData= new File("projects/flightData.txt");
-	private File userFlights= new File("projects/usersFlights.txt");
-	private File userMiles= new File("projects/userMiles.txt");
+	private File flightData= new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/flightData.txt");
+	private File userFlights= new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/usersFlights.txt");
+	private File userMiles= new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/userMiles.txt");
 	private boolean blacklist= false;
 	
 	
@@ -30,7 +30,7 @@ public class User {
 	public User(String u, String p) throws FileNotFoundException {
 		username=u;
 		password=p;
-		Scanner sc1= new Scanner(new File("projects/usersFlights.txt"));
+		Scanner sc1= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/usersFlights.txt"));
 		flightHistory=new ArrayList<>();
 		while( sc1.hasNextLine()) {
 			String line= sc1.nextLine().trim();
@@ -47,7 +47,7 @@ public class User {
 		if(flightHistory.size()==0) {
 			flightHistory.add(this.username);
 		}
-		Scanner sc2= new Scanner( new File("projects/userMiles.txt"));
+		Scanner sc2= new Scanner( new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/userMiles.txt"));
 		while( sc2.hasNextLine()) {
 			String line= sc2.nextLine().trim();
 			String[] linesplit= line.split(" ");
@@ -65,7 +65,7 @@ public class User {
 	// need to add sorting at the end of each case
 	
 	public void search() throws FileNotFoundException {
-		Scanner reader= new Scanner(new File("projects/flightData.txt"));
+		Scanner reader= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/flightData.txt"));
 		Scanner sc= new Scanner(System.in);
 		System.out.println("What would you like to search by?");
 		System.out.println("A: Flight Number");
@@ -250,7 +250,7 @@ public class User {
 	//this does allow you to book the same flight mulitple times, which will account for multiple tickets being bought.
 	public void book() throws IOException {
 		Scanner reader2= new Scanner(flightData);
-		Scanner myOtherReader= new Scanner(new File("projects/blacklist.txt"));
+		Scanner myOtherReader= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/blacklist.txt"));
 		System.out.println("What is the flight number of the flight you wish to book?");
 		ArrayList<String> list= new ArrayList<>();
 		String newline= "";
@@ -477,7 +477,7 @@ public class User {
 			}
 		}
 		if(hasFlown==true) {
-			Scanner read2= new Scanner(new File("projects/ratings.txt"));
+			Scanner read2= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/ratings.txt"));
 			while(read2.hasNextLine()) {
 				String line2= read2.nextLine();
 				String[] linesplit2= line2.split(",");
@@ -489,7 +489,7 @@ public class User {
 					list.add(line2);
 				}
 			}
-			PrintWriter powpow= new PrintWriter(new File("projects/ratings.txt"));
+			PrintWriter powpow= new PrintWriter(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/ratings.txt"));
 			for(String line: list) {
 				powpow.println(line);
 			}

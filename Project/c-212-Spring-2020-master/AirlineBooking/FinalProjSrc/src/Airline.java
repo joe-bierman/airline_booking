@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 /*
- * Group 54 Final Project
+ * 
  * Class that contains the functions that belong to the Airline administrators
  */
 
@@ -20,8 +20,8 @@ public class Airline {
 	private ArrayList<String> blacklist= new ArrayList<String>();
 	private ArrayList<String> otherBL= new ArrayList<String>();
 	
-	private File file= new File("projects/flightData.txt");
-	private File blacklistFile = new File("projects/blacklist.txt");
+	private File file= new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/flightData.txt");
+	private File blacklistFile = new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/blacklist.txt");
 	private PrintWriter pw=new PrintWriter(new FileWriter(file,true));
 
 	//I'm thinking we might need some sort of data file to store the blacklist, that way it persists even after the program closes
@@ -34,7 +34,7 @@ public class Airline {
 		
 		
 		//something here that populates the blacklist from a data file
-		Scanner sc1= new Scanner(new File("projects/blacklist.txt"));
+		Scanner sc1= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/blacklist.txt"));
 		while( sc1.hasNextLine()) {
 			String line= sc1.nextLine();
 			//Separate by commas, Airline should be index [0]
@@ -123,7 +123,7 @@ public class Airline {
 		Scanner scanner1= new Scanner(System.in);
 		System.out.println("How many miles would you like to gift your affected customers?");
 		int gMiles= scanner1.nextInt();
-		Scanner us= new Scanner(new File("projects/usersFlights.txt"));
+		Scanner us= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/usersFlights.txt"));
 		ArrayList<String> customers= new ArrayList<>();
 		while(us.hasNextLine()) {
 			String mline= us.nextLine();
@@ -137,7 +137,7 @@ public class Airline {
 		}
 		ArrayList<String> temp= new ArrayList<>();
 		String tempString="";
-		Scanner thisReader= new Scanner(new File("projects/userMiles.txt"));
+		Scanner thisReader= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/userMiles.txt"));
 		for(String user: customers) {
 			while(thisReader.hasNextLine()) {
 				String line= thisReader.nextLine();
@@ -151,7 +151,7 @@ public class Airline {
 					temp.add(line);
 				}
 			}
-			PrintWriter pdw= new PrintWriter(new File("projects/userMiles.txt"));
+			PrintWriter pdw= new PrintWriter(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/userMiles.txt"));
 			for(String i: temp) {
 				pdw.println(i);
 			}
@@ -237,7 +237,7 @@ public class Airline {
 		int miles= scanner1.nextInt();
 		ArrayList<String> temp= new ArrayList<>();
 		String tempString="";
-		Scanner thisReader= new Scanner(new File("projects/userMiles.txt"));
+		Scanner thisReader= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/userMiles.txt"));
 		while(thisReader.hasNextLine()) {
 			String line= thisReader.nextLine();
 			String[] linesplit= line.split(" ");
@@ -285,7 +285,7 @@ public class Airline {
 		
 	}
 	public void viewRatings() throws FileNotFoundException {
-		Scanner scan= new Scanner(new File("projects/ratings.txt"));
+		Scanner scan= new Scanner(new File("Project/c-212-Spring-2020-master/AirlineBooking/FinalProjSrc/projects/ratings.txt"));
 		ArrayList<String> comments= new ArrayList<>();
 		while(scan.hasNextLine()) {
 			String line= scan.nextLine();

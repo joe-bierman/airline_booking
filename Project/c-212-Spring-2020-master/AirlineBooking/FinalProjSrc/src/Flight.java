@@ -2,7 +2,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /*
- * Group 54 Final Project
+ *
  * Data class that constructs a Flight object , used for data organization
  */
 
